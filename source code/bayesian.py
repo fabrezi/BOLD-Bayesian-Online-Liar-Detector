@@ -1,3 +1,8 @@
+##############################################
+#this code is to perfrom supervised learn with sklearn package on the 
+#dataset. 
+
+########################################################################
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
