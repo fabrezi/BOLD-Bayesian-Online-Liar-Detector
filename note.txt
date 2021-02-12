@@ -1,8 +1,4 @@
-Notes regarding the project will be placed here.
-tentative title: Bayesian deep learning neural network for online liar detector with blockchain architecture
+Conference Name: 
+Submission Date: 03/10/2021
+Title: BOLD: Bayesian Online Liar Detector via Ethereum Smart Contract Mechanism
 
-contribution:
-1. create a BNN algorithm to run test and train on liar dataset
-2. flask web framework to check text content for factuality
-3. get/ post command 
-4. blockchain architecture??
