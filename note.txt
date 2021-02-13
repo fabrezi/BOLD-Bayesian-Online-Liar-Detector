@@ -1,5 +1,8 @@
-Conference Name: 
+Conference Name: DEEP- BDB 2021
 Submission Date: 03/10/2021
+Notification: 05/20/2021
+manuscript due: 06/15/2021
+
 Title: BOLD: Bayesian Online Liar Detector via Ethereum Smart Contract Mechanism
 
 CHECKLIST!!
