@@ -1,8 +1,38 @@
-Notes regarding the project will be placed here.
-tentative title: Bayesian deep learning neural network for online liar detector with blockchain architecture
+Conference Name: DEEP- BDB 2021
+Submission Date: 03/10/2021
+Notification: 05/20/2021
+manuscript due: 06/15/2021
 
-contribution:
-1. create a BNN algorithm to run test and train on liar dataset
-2. flask web framework to check text content for factuality
-3. get/ post command 
-4. blockchain architecture??
+Title: BOLD: Bayesian Online Liar Detector via Ethereum Smart Contract Mechanism
+
+CHECKLIST!!
+
+[1] supervise learning - non- deep learning
+- Understand the LIAR dataset
+- read the Wang paper- liar liar pants on fire
+- fix the jenky sklearn code
+- get the appropriate results for acc, f1-score, prediction etc
+- receive better results, eg: graphs, distribution, convolution matrix
+
+[2] web framework
+- create a flask based site
+- setup SQL
+- get/post command
+- get good results (showing that the algorithm is learning etc)
+
+[3] BDNN ALGORITHM
+- create BDNN (bayesian deep NN) alg (pseudocode)??
+- implement the BDNN alg with tensorflow
+- get highest qulaity acc on LIAR dataset ---- this is the most important
+  result!!!
+- define the alg and the architecture
+- math model be defined
+
+[4] BOLD archtiecture
+- create a novel arch. that comprises ethereum smart contract
+with BDNN alg
+- sample implementation result
+- BOLD arch. diagram is required
+- future work in the area
+
+---------------------THE END-------------------------------
