@@ -36,3 +36,8 @@ with BDNN alg
 - future work in the area
 
 ---------------------THE END-------------------------------
+Hello. these are the guiding notes in order to complete the thesis work. 
+##please be informed that you require to complete the thesis case and extend I-20 to summer semester. these are hard times. I have seen harder times. rest asure, that we will make it through. <finger cross>
+CS7999: program of completion:
+Contents:
+ - related work - dataset - architecture - results - conclusion
