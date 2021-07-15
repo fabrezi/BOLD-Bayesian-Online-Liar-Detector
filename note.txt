@@ -44,7 +44,13 @@ Contents:
  # porposal rather then a true reaserch endeavour.
  #################################################################
  ####################################################################
- 
  BERT: Bidirectional Encoder Representation Transformer
  
- <def>: BERT is a deep neural network that uses 
+ <def>: BERT is a deep neural network that uses pre-train bidrectional representation from unlabel text to perform language 
+ related task, such as: Q&A, language inference, etc. It is fine-tuned ( ).
+ 
+ : Bidirectional:
+ :Encoder:
+ :Transformer: 
+ 
+ 
