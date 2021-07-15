@@ -43,3 +43,8 @@ Contents:
  # it wont be easy but this thesis can be treated a final term project
  # porposal rather then a true reaserch endeavour.
  #################################################################
+ ####################################################################
+ 
+ BERT: Bidirectional Encoder Representation Transformer
+ 
+ <def>: BERT is a deep neural network that uses 
