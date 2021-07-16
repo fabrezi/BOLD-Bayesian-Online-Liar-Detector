@@ -37,7 +37,9 @@ with BDNN alg
      : BERT = bidirectional (ELMO) + transformer (GPT)
  
  <property>: 
-      + Pre- train model:
+      + Contextual: captures the context of the sentence with bidirectional property
+      + Pre- train model: a model that was trained on large dataset to solve a problem similar to the one specified to solve.
+      it captures the universal representation of langauge.
       + semi- supervise learning: train step, in which a small lable example and large number of unlabeled examples.
       + fine- tuned: transfer the learn knowledge from train to target test.
       + Bidirectional: fuse the left and right language model/ bi means both direction
@@ -53,6 +55,8 @@ with BDNN alg
       + feed forward layer: compute non linear hierarchial features
       + layer norm and residuals: makes train deep netwroks healthy
       + positional embeddings: allows model to learn raltive positioning
+      
+<diff: PTM v transfer learning>: one is a model, the other is learning mechanism. both are quite similar.
 
 Q. what is the advantage of transformer over LSTM?
 A. + slef attention leads to no locality bias. which means long distance context has equal opportunity
