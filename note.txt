@@ -48,9 +48,24 @@ Contents:
  
  <def>: BERT is a deep neural network that uses pre-train bidrectional representation from unlabel text to perform language 
  related task, such as: Q&A, language inference, etc. It is fine-tuned ( ).
+     : BERT = bidirectional (ELMO) + transformer (GPT)
  
- : Bidirectional:
- :Encoder:
- :Transformer: 
+ <property>: 
+      + Pre- train model:
+      + semi- supervise learning: train step, in which a small lable example and large number of unlabeled examples.
+      + fine- tuned: transfer the learn knowledge from train to target test.
+      + Bidirectional: fuse the left and right language model/ bi means both direction
+      + Encoder:
+      + Transformer:
+
+<Transformer>:
+      + multi-head self attention: models context
+      + feed forward layer: compute non linear hierarchial features
+      + layer norm and residuals: makes train deep netwroks healthy
+      + positional embeddings: allows model to learn raltive positioning
  
+ <def>: [CLS]: classifier token
+        [SEP]: sentence seperator
+        
+
  
