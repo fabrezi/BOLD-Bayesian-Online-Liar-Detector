@@ -28,21 +28,7 @@ with BDNN alg
 - sample implementation result
 - BOLD arch. diagram is required
 - future work in the area
-
----------------------THE END-------------------------------
-Hello. these are the guiding notes in order to complete the thesis work. 
-##please be informed that you require to complete the thesis case and extend I-20 to summer semester. these are hard times. I have seen harder times. rest asure, that we will make it through. <finger cross>
-CS7999: program of completion:
-Contents:
- - related work - dataset - architecture - results - conclusion
- 
- #################################################################
- # The main contribution of the theis is to create a project called 
- # Go- news, which provides a solution for the fake news problem as
- # a symbiotic relationship of ML and blockchain/ smart contract.
- # it wont be easy but this thesis can be treated a final term project
- # porposal rather then a true reaserch endeavour.
- #################################################################
+#############################################################################
  ####################################################################
  BERT: Bidirectional Encoder Representation Transformer
  
@@ -55,14 +41,23 @@ Contents:
       + semi- supervise learning: train step, in which a small lable example and large number of unlabeled examples.
       + fine- tuned: transfer the learn knowledge from train to target test.
       + Bidirectional: fuse the left and right language model/ bi means both direction
-      + Encoder:
-      + Transformer:
+      + Encoder: converts input token to an embedding
+      + Transformer: an architecture aims to solve sequence-to-sequence (models in NLP are
+      used to convert sequences of type A to type B. for instance: translate language from
+      one to another) task while handling long range dependencies with ease
+      + BERT-base: 12 layer, 768 hidden, 12 head
+      + BERT-large: 24 layer, 1024 hidden, 16 head
 
 <Transformer>:
       + multi-head self attention: models context
       + feed forward layer: compute non linear hierarchial features
       + layer norm and residuals: makes train deep netwroks healthy
       + positional embeddings: allows model to learn raltive positioning
+
+Q. what is the advantage of transformer over LSTM?
+A. + slef attention leads to no locality bias. which means long distance context has equal opportunity
+   + single maultiplication per layer leads to efficiency on TPU. as effective batch size is num of words not sequences
+   
  
  <def>: [CLS]: classifier token
         [SEP]: sentence seperator
