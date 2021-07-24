@@ -8,7 +8,7 @@ import numpy as np
 #achieve acc > 25%
 #other metrics: prec, recall, f1, support
 # [1] so the blog implementation uses binary lablel...How to handle multi - label??
-#
+# we need to make this work 
 ##########################
 
 #print(tf.__version__)
