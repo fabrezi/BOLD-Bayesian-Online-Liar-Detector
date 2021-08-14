@@ -18,3 +18,13 @@ plt.xlabel('tags')
 plt.ylabel('frequency')
 plt.show()
 
+
+
+
+#plt.figure(figsize=(20,5))
+plt.hist(train_data_fig['PARTY-AFFILIATION'].astype(str), bins=100, align='mid')
+plt.subplots_adjust(bottom=0.5)
+#plt.rcParams.update({'font.size': 12})
+plt.xticks(rotation=90)
+plt.xlabel('speaker-state-info')
+plt.show()
