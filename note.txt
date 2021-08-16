@@ -62,7 +62,16 @@ Q. what is the advantage of transformer over LSTM?
 A. + slef attention leads to no locality bias. which means long distance context has equal opportunity
    + single maultiplication per layer leads to efficiency on TPU. as effective batch size is num of words not sequences
    
- 
+#########################################################################
+##########################################################################
+#####################
+
+<::7^R
+-these are notes
+
+-
+
+::>
  <def>: [CLS]: classifier token
         [SEP]: sentence seperator
         
