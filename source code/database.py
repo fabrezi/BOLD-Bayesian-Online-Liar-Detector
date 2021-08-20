@@ -28,3 +28,10 @@ plt.subplots_adjust(bottom=0.5)
 plt.xticks(rotation=90)
 plt.xlabel('speaker-state-info')
 plt.show()
+
+(trainer['SPEAKER'].value_counts().sort_values(ascending=False).head(50).plot.bar())
+plt.subplots_adjust(bottom=0.5)
+plt.xlabel('speaker')
+plt.ylabel('frequency')
+plt.show()
+
