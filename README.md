@@ -12,10 +12,8 @@ Try it out. Have fun.
 
 the model has updated. I am using BERT model instead of Bayesian.
 
-Fuck you!!
 
-
-
+<mowgli>
 
 
 Cheers!!
