@@ -1,8 +1,21 @@
-# BOLD-Bayesian-Online-Liar-Detector
-We develop a Bayesian Neural Network algorithm to predict whether the text corpus is true or fake content. There is a link that leads to BOLD webpage for real- time testing. 
+# BOLD-BERT-Online-Liar-Detector
+
+
+ITS A MIGHTY PRETTY BERT. 
+************************************************
+**************************************************
+ok. so this is a classification test to see if the BERT model does any good on the LIAR Dataset. it is a dataset made by Politifact. 
+Further there is an implementation of smart contract for verification test module.
+
 This is part of reasearch thesis work.
 Try it out. Have fun.
 
 the model has updated. I am using BERT model instead of Bayesian.
+
+Fuck you!!
+
+
+
+
 
 Cheers!!
