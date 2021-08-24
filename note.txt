@@ -66,10 +66,6 @@ A. + slef attention leads to no locality bias. which means long distance context
 ##########################################################################
 #####################
 
-<::7^R
--these are notes
-
--
 
 ::>
  <def>: [CLS]: classifier token
