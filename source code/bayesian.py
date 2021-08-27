@@ -22,6 +22,8 @@ tf = pd.read_csv('C:\\Users\\farid\\PycharmProjects\\CS7992\\DB\\train01.csv')
 testdata = pd.read_csv('C:\\Users\\farid\\PycharmProjects\\CS7992\\DB\\test01.csv')
 
 #form each label to numeric value
+#form each label to numeric value
+#category_id is the numeric form of the labels. similar to one hot encoder
 col = ['LABEL', 'TEXT']
 tf = tf[col]
 tf = tf[pd.notnull(tf['TEXT'])]
@@ -48,6 +50,10 @@ plt.show() #work
 
 #convert text to vector
 #Tf-idf part
+#convert text to vector space
+#Tf-idf: term frequency- inverse document frequency
+#parameters: min_df:minimum number of times the word must occur to be taken in dict, ngram_range: n-grams,
+#stop_words:remove pronouns
 tfidf = TfidfVectorizer(sublinear_tf=True, min_df=5, norm='l2', encoding='latin-1'
                         , ngram_range=(1,2), stop_words='english')
 features= tfidf.fit_transform(tf.TEXT).toarray()
