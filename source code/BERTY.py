@@ -46,6 +46,19 @@ ts.loc[X_val, 'data_type'] = 'val'
 #############################################
 #BERT tokenizer and encoding the Data
 ##############################################
+
+##############################################
+###tokenization= raw text and split into tokens,
+#convert numeric data into words
+#bert-tokenizer is based on wordpiece
+#add_special_token -- the sequences will be encoded with
+#special tokens relative to their model
+#return_attention_mask -- batch sequences together
+#return_tensor is to return pytorch
+#split data into inout_ids, attention_mask, labels
+#after encoded data, we make train and validation split
+#bert-base-uncased: 12-layer, 768-hidden, 12-heads, 110M parameters. Trained on lower-cased English text.
+###################################################
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased',
                                           do_lower_case=True)
 
@@ -89,6 +102,14 @@ model = BertForSequenceClassification.from_pretrained(
 ###############################
 #Data Loaders
 ##################################
+
+######################################
+##DataLoader: combines dataset and sampler and provides
+#an iterable over the given dataset
+#randomsampler is for train, sequentialsampler is
+#for validation
+######################################
+
 from torch.utils.data import DataLoader, RandomSampler, SequentialSampler
 
 batch_size = 3
