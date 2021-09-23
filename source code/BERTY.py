@@ -11,7 +11,9 @@ from torch.utils.data import TensorDataset
 from transformers import BertForSequenceClassification
 
 #load the dataset
-ts = pd.read_csv('C:\\Users\\fksch\\Desktop\\CS7999\\archive\\liar_dataset\\lean-liar-dataset\\lean-liar-train-set.csv')
+#make mini-train set
+#
+ts = pd.read_csv('C:\\Users\\fksch\\PycharmProjects\\CS7999\\tiny-dataset\\igloo.txt')
 #print(ts['LABEL'].value_counts())
 
 #encoding the labels
@@ -46,19 +48,6 @@ ts.loc[X_val, 'data_type'] = 'val'
 #############################################
 #BERT tokenizer and encoding the Data
 ##############################################
-
-##############################################
-###tokenization= raw text and split into tokens,
-#convert numeric data into words
-#bert-tokenizer is based on wordpiece
-#add_special_token -- the sequences will be encoded with
-#special tokens relative to their model
-#return_attention_mask -- batch sequences together
-#return_tensor is to return pytorch
-#split data into inout_ids, attention_mask, labels
-#after encoded data, we make train and validation split
-#bert-base-uncased: 12-layer, 768-hidden, 12-heads, 110M parameters. Trained on lower-cased English text.
-###################################################
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased',
                                           do_lower_case=True)
 
@@ -102,14 +91,6 @@ model = BertForSequenceClassification.from_pretrained(
 ###############################
 #Data Loaders
 ##################################
-
-######################################
-##DataLoader: combines dataset and sampler and provides
-#an iterable over the given dataset
-#randomsampler is for train, sequentialsampler is
-#for validation
-######################################
-
 from torch.utils.data import DataLoader, RandomSampler, SequentialSampler
 
 batch_size = 3
@@ -243,17 +224,17 @@ for epoch in tqdm(range(1, epochs + 1)):
 
         progress_bar.set_postfix({'training_loss': '{:.3f}'.format(loss.item() / len(batch))})
 
-    torch.save(model.state_dict(), f'data_volume/finetuned_BERT_epoch_{epoch}.model')
+    #torch.save(model.state_dict(), f'data_volume/finetuned_BERT_epoch_{epoch}.model')
 
-    tqdm.write(f'\nEpoch {epoch}')
+    #tqdm.write(f'\nEpoch {epoch}')
 
     loss_train_avg = loss_train_total / len(dataloader_train)
-    tqdm.write(f'Training loss: {loss_train_avg}')
+    print(f'Training loss: {loss_train_avg}')
 
     val_loss, predictions, true_vals = evaluate(dataloader_validation)
     val_f1 = f1_score_func(predictions, true_vals)
-    tqdm.write(f'Validation loss: {val_loss}')
-    tqdm.write(f'F1 Score (Weighted): {val_f1}')
+    print(f'Validation loss: {val_loss}')
+    print(f'F1 Score (Weighted): {val_f1}')
 
 
 ###################################
